@@ -1,0 +1,42 @@
+/* body {
+    background: url('../images/attParkSF.jpg');
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+} */
+
+body { 
+    background: url('../images/attParkSF.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.jumbotron {
+	background: #07110880;
+	width: 900px;
+	height: 550px;
+	margin: 6rem auto 0 auto;
+}
+
+h1 {
+    font-family: 'Fredericka the Great', serif;
+    word-spacing: 10px;
+    letter-spacing: 8px;
+    color: #F8F8FF;
+    text-shadow: 2px 2px 3px #030301;
+    margin-bottom: 2rem;
+}
+
+hr {
+	background-color: #F8F8FF;
+}
+
+.startButton {
+	background: #6CA6C1;
+}
+
+.startButton:hover {
+	background: #66C7F4;
+}
