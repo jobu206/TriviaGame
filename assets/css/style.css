@@ -1,9 +1,3 @@
-/* body {
-    background: url('../images/attParkSF.jpg');
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
-} */
 
 body { 
     background: url('../images/attParkSF.jpg') no-repeat center center fixed; 
@@ -15,9 +9,15 @@ body {
 
 .jumbotron {
 	background: #07110880;
-	width: 900px;
-	height: 550px;
+	width: 1000px;
+	height: 750px;
 	margin: 6rem auto 0 auto;
+}
+
+.innerContainer {
+    margin: 0 auto;
+    width: 800px;
+    /* text-align: center; */
 }
 
 h1 {
@@ -31,6 +31,30 @@ h1 {
 
 hr {
 	background-color: #F8F8FF;
+}
+
+#timer {
+    color: #F8F8FF;
+    font-family: 'ubuntu', serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+ol > li {
+    color: #F8F8FF;
+    font-family: 'ubuntu', serif;
+    font-size: 18px;
+    /* justify-content: left; */
+}
+
+label {
+    color: #F8F8FF;
+    font-family: 'ubuntu', serif;
+    font-size: 18px;
+}
+
+li + .answers {
+    padding-bottom: 35px;
 }
 
 .startButton {

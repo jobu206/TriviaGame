@@ -1,21 +1,23 @@
 /*
  -----------------------------------------------------------------
-|   PSEUDO CODE                                                   |
+   PSEUDO CODE                                                   
  -----------------------------------------------------------------
-|   1. Click start button                                         |
-|   2. Q1 appears and timer starts                                |
-|   3. User guesses answer to 4 multi choice questions            |
-|       a. User cannot guess more than 1 answer per question      |
-|           1. In this case use radio buttons                     |
-|   4. User submits answers                                       |
-|       a. If time is left, user is allowed to go ahead and       |
-|          submit answers.                                        |
-|           1. Answers are tallied with the number correct and    |
-|              number wrong.                                      |
-|       b. If time is not left, user loses game.                  |
--------------------------------------------------------------------
+   1. Click start button                                         
+       a. Need a variable to hold start function             
+   2. All Qs appear and timer starts
+   3. User guesses answer to 4 multi choice questions
+       a. User cannot guess more than 1 answer per question
+           1. In this case use radio buttons
+                - Need to figure out how to capture answer in variable.
+   4. User submits answers
+       a. If time is left, user is allowed to go ahead and
+          submit answers.
+       b. If time is not left, any unaswered Qs marked incorrect
+        c. Answers are tallied with the number correct and
+              number wrong.
+
 --------------------------
-|  Qs for baseball trivia |
+  Qs for baseball trivia 
 ---------------------------
 - Who holds the single season record for the highest batting average?
     - Jose Canseco
@@ -45,13 +47,6 @@
 */
 
 $(document).ready(function() {
-   
-    // delcare variables
-    // tracking number of q's asked.
-    var questionCounter = 0;
 
-    // more stuff
-
-
-    // 
+    // $("#quiz").hide();
 });
