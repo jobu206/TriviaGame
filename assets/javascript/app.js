@@ -90,6 +90,9 @@ $("#start").on("click", function () {
 
     // start timer countdown
     start();
+
+    // questions to answer
+    
 })
 
 
@@ -104,9 +107,33 @@ function start() {
 }
 
 // function to decrement num container variable
+function decrement(param) {
+    // decrement counter;
+    counter--;
+    
+    // score tallied and shown
+    $("#timer").html(counter + "left");
 
     // stop time
+    stop();
 
-// score tallied and shown
+    // set score
+    score();
+
+    // display final tally
+    finalResults();
+}
+
+// function to stop time running
+function stop() {
+    clearInterval(intervalId);
+}
+
+function finalResults() {
+    
+}
+
+
+
 
 });
