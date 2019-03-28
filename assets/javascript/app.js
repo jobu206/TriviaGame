@@ -49,8 +49,7 @@
 
 $(document).ready(function() {
 
-// variables
-
+/* VARIABLES */
 // variable to hold intervalID to display on screen
 var counter = 30;
 
@@ -69,16 +68,20 @@ var noAnswers = 0;
 // questionsArray
 var qArr = [{
     question: "Who holds the single season record for the highest batting average?",
-    answers: ["Jose Canseco", "Ty Cobb", "Hugh Duffy", "Fred Dunlap"] 
+    answers: ["Ty Cobb", "Jose Canseco", "Hugh Duffy", "Fred Dunlap"],
+    correctAnswer: 2
 },{
     question: "Who holds the record for the fastest pitch in Baseball History?",
-    answers: ["Aroldis Chapman", "Nolan Ryan", "Pedro Martinez", "Randy Johnson"]
+    answers: ["Pedro Martinez", "Nolan Ryan", "Aroldis Chapman", "Randy Johnson"],
+    correctAnswer: 3
 },{
     question: "Who holds the record for throwing the most No Hitters in their career?",
-    answers: ["Nolan Ryan", "Greg Maddux", "Felix Hernandez", "Roger Clemens"]
+    answers: ["Greg Maddux", "Felix Hernandez", "Roger Clemens", "Nolan Ryan"],
+    correctAnswer: 4
 },{
     question: "Who is the only teenager to homer on Opening Day?",
-    answers: ["Alex Rodriguez","Robin Yount","Gary Carter","Keith Hernandez"]
+    answers: ["Alex Rodriguez","Robin Yount","Gary Carter","Keith Hernandez"],
+    correctAnswer: 2
 }] 
 
 // start game on click
@@ -91,8 +94,23 @@ $("#start").on("click", function () {
     // start timer countdown
     start();
 
-    // questions to answer
-    
+    // Now we're displaying the questions
+    // question #1
+    $("#questions").html("<li class='quizQs'>" + question[0] + "</li>");
+    // answers for Q1
+    $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + answers[0] + "</label>")
+    $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + answers[1] + "</label>")
+    $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + answers[2] + "</label>")
+    $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + answers[3] + "</label>")
+
+    // question #2
+    $("#questions").html("<li class='quizQs'>" + question[1] + "</li>");
+    // answers for Q2
+    $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + answers[0] + "</label>")
+    $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + answers[1] + "</label>")
+    $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + answers[2] + "</label>")
+    $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + answers[3] + "</label>")  
+
 })
 
 
