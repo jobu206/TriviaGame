@@ -99,7 +99,8 @@ $("#start").on("click", function () {
 
 // set time interval function
 function start() {
-    clearInterval
+    clearInterval(intervalId);
+    intervalId = setInterval(decrement, 1000);
 }
 
 // function to decrement num container variable
