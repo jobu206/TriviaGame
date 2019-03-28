@@ -49,9 +49,53 @@
 
 $(document).ready(function() {
 
-    // hide quiz until start button is clicked.
-    
+// variables
+    // variable to hold intervalID to display on screen
+    var num = 30;
 
-    // function to start game
+    // intervalId
+    var intervalId;
+
+    // correctAnswers
+    var correctAnswers = 0;
+    
+    // wrongAnswers
+    var wrongAnswers = 0;
+
+    // noAnswers
+    var noAnswers = 0;
+
+// questionsArray
+var qArr = [{
+    question: "Who holds the single season record for the highest batting average?",
+    answers: ["Jose Canseco", "Ty Cobb", "Hugh Duffy", "Fred Dunlap"] 
+},{
+    question: "Who holds the record for the fastest pitch in Baseball History?",
+    answers: ["Aroldis Chapman", "Nolan Ryan", "Pedro Martinez", "Randy Johnson"]
+},{
+    question: "Who holds the record for throwing the most No Hitters in their career?",
+    answers: ["Nolan Ryan", "Greg Maddux", "Felix Hernandez", "Roger Clemens"]
+},{
+    question: "Who is the only teenager to homer on Opening Day?",
+    answers: ["Alex Rodriguez","Robin Yount","Gary Carter","Keith Hernandez"]
+}] 
+
+// start game
+
+    // hide start button
+
+    // display initial countdown (intervalId)
+
+    // answers to questions
+
+    // submit answers
+
+// set time interval function
+
+// function to decrement num container variable
+
+    // stop time
+
+// score tallied and shown
 
 });
