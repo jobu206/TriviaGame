@@ -50,20 +50,21 @@
 $(document).ready(function() {
 
 // variables
-    // variable to hold intervalID to display on screen
-    var num = 30;
 
-    // intervalId
-    var intervalId;
+// variable to hold intervalID to display on screen
+var counter = 30;
 
-    // correctAnswers
-    var correctAnswers = 0;
-    
-    // wrongAnswers
-    var wrongAnswers = 0;
+// intervalId
+var intervalId;
 
-    // noAnswers
-    var noAnswers = 0;
+// correctAnswers
+var correctAnswers = 0;
+
+// wrongAnswers
+var wrongAnswers = 0;
+
+// noAnswers
+var noAnswers = 0;
 
 // questionsArray
 var qArr = [{
@@ -80,17 +81,26 @@ var qArr = [{
     answers: ["Alex Rodriguez","Robin Yount","Gary Carter","Keith Hernandez"]
 }] 
 
-// start game
-
-    // hide start button
-
+// start game on click
+$("#start").on("click", function () {
+    // this keyword pertains to the start game function since that's what's called this method.
+    $(this).hide();
     // display initial countdown (intervalId)
+    $("#timer").html("<h4>30 Seconds Left</h4>")
+
+    // start timer countdown
+    start();
+})
+
 
     // answers to questions
 
     // submit answers
 
 // set time interval function
+function start() {
+    clearInterval
+}
 
 // function to decrement num container variable
 
