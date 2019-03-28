@@ -10,7 +10,7 @@ body {
 .jumbotron {
 	background: #07110880;
 	width: 1000px;
-	height: 750px;
+	/* height: 750px; */
 	margin: 6rem auto 0 auto;
 }
 
@@ -44,7 +44,7 @@ ol > li {
     color: #F8F8FF;
     font-family: 'ubuntu', serif;
     font-size: 18px;
-    /* justify-content: left; */
+    text-align: left;
 }
 
 label {
@@ -53,14 +53,20 @@ label {
     font-size: 18px;
 }
 
-li + .answers {
-    padding-bottom: 35px;
+.answers {
+    padding-bottom: 8px;
 }
 
-.startButton {
-	background: #6CA6C1;
+.custom-control-label {
+    justify-items: left;
 }
 
-.startButton:hover {
-	background: #66C7F4;
-}
+
+/* 
+.radio-inline+.radio-inline {
+    justify-content: left;
+} */
+
+/* .quizQs {
+    padding-bottom: 5px;
+} */

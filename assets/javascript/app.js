@@ -50,11 +50,8 @@
 $(document).ready(function() {
 
     // hide quiz until start button is clicked.
-    $("#quiz").hide();
-
-    // function to start game
     
 
-
+    // function to start game
 
 });
