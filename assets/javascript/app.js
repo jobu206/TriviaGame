@@ -96,31 +96,31 @@ $(".startButton").on("click", function () {
 
     // question #1
     $('#q1').append('<p>1&#46; ' + qArr[0].question + '</p>');
-    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question1'> " + " <label for='defaultInline1'>" + qArr[0].answers[0] + "</label>");
-    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question1'> " + " <label for='defaultInline1'>" + qArr[0].answers[1] + "</label>");
-    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question1'> " + " <label for='defaultInline1'>" + qArr[0].answers[2] + "</label>");
-    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question1'> " + " <label for='defaultInline1'>" + qArr[0].answers[3] + "</label>");
+    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q1a1'> " + " <label for='defaultInline1'>" + qArr[0].answers[0] + "</label>");
+    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q1a2'> " + " <label for='defaultInline1'>" + qArr[0].answers[1] + "</label>");
+    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q1a3'> " + " <label for='defaultInline1'>" + qArr[0].answers[2] + "</label>");
+    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q1a4'> " + " <label for='defaultInline1'>" + qArr[0].answers[3] + "</label>");
 
     // question #2
     $('#q2').append('<p>2&#46; ' + qArr[1].question + '</p>');
-    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question2'> " + " <label for='defaultInline1'>" + qArr[1].answers[0] + "</label>");
-    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question2'> " + " <label for='defaultInline1'>" + qArr[1].answers[1] + "</label>");
-    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question2'> " + " <label for='defaultInline1'>" + qArr[1].answers[2] + "</label>");
-    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question2'> " + " <label for='defaultInline1'>" + qArr[1].answers[3] + "</label>");
+    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q2a1'> " + " <label for='defaultInline1'>" + qArr[1].answers[0] + "</label>");
+    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q2a2'> " + " <label for='defaultInline1'>" + qArr[1].answers[1] + "</label>");
+    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q2a3'> " + " <label for='defaultInline1'>" + qArr[1].answers[2] + "</label>");
+    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q2a4'> " + " <label for='defaultInline1'>" + qArr[1].answers[3] + "</label>");
 
     // question #3
     $('#q3').append('<p>3&#46; ' + qArr[2].question + '</p>');
-    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question3'> " + " <label for='defaultInline1'>" + qArr[2].answers[0] + "</label>");
-    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question3'> " + " <label for='defaultInline1'>" + qArr[2].answers[1] + "</label>");
-    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question3'> " + " <label for='defaultInline1'>" + qArr[2].answers[2] + "</label>");
-    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question3'> " + " <label for='defaultInline1'>" + qArr[2].answers[3] + "</label>");
+    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q3a1'> " + " <label for='defaultInline1'>" + qArr[2].answers[0] + "</label>");
+    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q3a2'> " + " <label for='defaultInline1'>" + qArr[2].answers[1] + "</label>");
+    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q3a3'> " + " <label for='defaultInline1'>" + qArr[2].answers[2] + "</label>");
+    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q3a4'> " + " <label for='defaultInline1'>" + qArr[2].answers[3] + "</label>");
 
     // question #4
     $('#q4').append('<p>4&#46; ' + qArr[3].question + '</p>');
-    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question4'> " + " <label for='defaultInline1'>" + qArr[3].answers[0] + "</label>");
-    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question4'> " + " <label for='defaultInline1'>" + qArr[3].answers[1] + "</label>");
-    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question4'> " + " <label for='defaultInline1'>" + qArr[3].answers[2] + "</label>");
-    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question4'> " + " <label for='defaultInline1'>" + qArr[3].answers[3] + "</label>");
+    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q4a1'> " + " <label for='defaultInline1'>" + qArr[3].answers[0] + "</label>");
+    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q4a2'> " + " <label for='defaultInline1'>" + qArr[3].answers[1] + "</label>");
+    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q4a3'> " + " <label for='defaultInline1'>" + qArr[3].answers[2] + "</label>");
+    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q4a4'> " + " <label for='defaultInline1'>" + qArr[3].answers[3] + "</label>");
 
     // submit answers
     $("#submit").html('<input class="btn btn-primary" type="submit" value="Submit">');
@@ -132,11 +132,6 @@ $(".startButton").on("click", function () {
         finalResults();
     })
 });
-
-
-    
-
-    
 
 // set time interval function
 function start() {
