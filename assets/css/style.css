@@ -5,6 +5,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: #f8f8ff;
   }
 
 .jumbotron {
@@ -20,11 +21,16 @@ body {
     /* text-align: center; */
 }
 
+#q1 p {
+    font-family: 'ubuntu', serif;
+    size: 25px;
+}
+
 h1 {
     font-family: 'Fredericka the Great', serif;
     word-spacing: 10px;
     letter-spacing: 8px;
-    color: #F8F8FF;
+    /* color: #f8f8ff; */
     text-shadow: 2px 2px 3px #030301;
     margin-bottom: 2rem;
 }
@@ -34,7 +40,7 @@ hr {
 }
 
 #timer {
-    color: #F8F8FF;
+    color: #f8f8ff;
     font-family: 'ubuntu', serif;
     font-size: 40px;
     margin-bottom: 40px;

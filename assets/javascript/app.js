@@ -94,23 +94,53 @@ $(".startButton").on("click", function () {
     // start timer countdown
     start();
 
-    // Now we're displaying the questions
     // question #1
-    $("#questions").append("<li>" + qArr[0].question + "</li>");
-    console.log('hi');
+    $('#q1').append('<p>1&#46; ' + qArr[0].question + '</p>');
+    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question1'> " + " <label for='defaultInline1'>" + qArr[0].answers[0] + "</label>");
+    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question1'> " + " <label for='defaultInline1'>" + qArr[0].answers[1] + "</label>");
+    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question1'> " + " <label for='defaultInline1'>" + qArr[0].answers[2] + "</label>");
+    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question1'> " + " <label for='defaultInline1'>" + qArr[0].answers[3] + "</label>");
+
+    // question #2
+    $('#q2').append('<p>2&#46; ' + qArr[1].question + '</p>');
+    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question2'> " + " <label for='defaultInline1'>" + qArr[1].answers[0] + "</label>");
+    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question2'> " + " <label for='defaultInline1'>" + qArr[1].answers[1] + "</label>");
+    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question2'> " + " <label for='defaultInline1'>" + qArr[1].answers[2] + "</label>");
+    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question2'> " + " <label for='defaultInline1'>" + qArr[1].answers[3] + "</label>");
+
+    // question #3
+    $('#q3').append('<p>3&#46; ' + qArr[2].question + '</p>');
+    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question3'> " + " <label for='defaultInline1'>" + qArr[2].answers[0] + "</label>");
+    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question3'> " + " <label for='defaultInline1'>" + qArr[2].answers[1] + "</label>");
+    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question3'> " + " <label for='defaultInline1'>" + qArr[2].answers[2] + "</label>");
+    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question3'> " + " <label for='defaultInline1'>" + qArr[2].answers[3] + "</label>");
+
+    // question #4
+    $('#q4').append('<p>4&#46; ' + qArr[3].question + '</p>');
+    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question4'> " + " <label for='defaultInline1'>" + qArr[3].answers[0] + "</label>");
+    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question4'> " + " <label for='defaultInline1'>" + qArr[3].answers[1] + "</label>");
+    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question4'> " + " <label for='defaultInline1'>" + qArr[3].answers[2] + "</label>");
+    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question4'> " + " <label for='defaultInline1'>" + qArr[3].answers[3] + "</label>");
+
+    // Now we're displaying the questions
+    // // question #1
+    // $("#questions").append("<p>1. " + qArr[0].question + "</p>");
+    // // console.log('hi');
     
-    // answers for Q1
-    $('#q1answer').append('<p>hello world</p>');
-    // $("#q1answer").html("<input type='radio' id='defaultInline1' name='question1'>" + "<label for='defaultInline1'>" + qArr[0].answers[0] + "</label>");
-    console.log('sup');
+    // // answers for Q1
+    // $('#q1answer').html('<p>hello world</p>');
+    // $("#q1answer").append("<input type='radio' id='defaultInline1' name='question1'>" + "<label for='defaultInline1'>" + qArr[0].answers[0] + "</label>");
+    // console.log('sup');
     
     // $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + qArr[0].answers[1] + "</label>")
     // $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + qArr[0].answers[2] + "</label>")
     // $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + qArr[0].answers[3] + "</label>")
 
     // // question #2
-    $("#questions").append("<li>" + qArr[1].question + "</li>");
-    console.log('hey');
+    // $("#question1").append("<p>" + qArr[1].question + "</p>");
+    
+    
+    // console.log('hey');
     // // answers for Q2
     // $(".answers").append("<input type='radio' class='custom-control-input' id='q2a1' name='question2'>" + "<label class='custom-control-label' for='q2a1'>" + qArr[1].answers[0] + "</label>")
     // $(".answers").html("<input type='radio' class='custom-control-input' id='q2a2' name='question2'>" + "<label class='custom-control-label' for='q2a2'>" + qArr[1].answers[1] + "</label>")
@@ -118,7 +148,7 @@ $(".startButton").on("click", function () {
     // $(".answers").html("<input type='radio' class='custom-control-input' id='q2a4' name='question2'>" + "<label class='custom-control-label' for='q2a4'>" + qArr[1].answers[3] + "</label>")
 
     // // question #3
-    $("#questions").append("<li class='quizQs'>" + qArr[2].question + "</li>");
+    // $("#questions").append("<li class='quizQs'>" + qArr[2].question + "</li>");
     // // answers for Q3
     // $(".answers").append("<input type='radio' class='custom-control-input' id='q3a1' name='question3'>" + "<label class='custom-control-label' for='q3a1'>" + qArr[2].answers[0] + "</label>")
     // $(".answers").html("<input type='radio' class='custom-control-input' id='q3a2' name='question3'>" + "<label class='custom-control-label' for='q3a2'>" + qArr[2].answers[1] + "</label>")
@@ -126,7 +156,7 @@ $(".startButton").on("click", function () {
     // $(".answers").html("<input type='radio' class='custom-control-input' id='q3a4' name='question3'>" + "<label class='custom-control-label' for='q3a4'>" + qArr[2].answers[3] + "</label>")
 
     // // question #4
-    $("#questions").append("<li class='quizQs'>" + qArr[3].question + "</li>");
+    // $("#questions").append("<li class='quizQs'>" + qArr[3].question + "</li>");
     // // answers for Q4
     // $(".answers").html("<input type='radio' class='custom-control-input' id='q4a1' name='question4'>" + "<label class='custom-control-label' for='q4a1'>" + qArr[3].answers[0] + "</label>") + 
     // $(".answers").html("<input type='radio' class='custom-control-input' id='q4a2' name='question4'>" + "<label class='custom-control-label' for='q4a2'>" + qArr[3].answers[1] + "</label>") + 
@@ -171,9 +201,15 @@ function stop() {
 
 function finalResults() {
     $('#time').hide();
-    
-
-    
+    $('#q1').hide();
+    $('#q1answers').hide();
+    $('#q2').hide();
+    $('#q2answers').hide();
+    $('#q3').hide();
+    $('#q3answers').hide();
+    $('#q4').hide();
+    $('#q4answers').hide();
+        
 }
 
 // keeping score
