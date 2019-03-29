@@ -169,6 +169,8 @@ $(".startButton").on("click", function () {
 
     // submit answers
     $("#submit").html('<input class="btn btn-primary" type="submit" value="Submit">');
+    console.log("submitted!");
+    
 
 // set time interval function
 function start() {
@@ -209,7 +211,12 @@ function finalResults() {
     $('#q3answers').hide();
     $('#q4').hide();
     $('#q4answers').hide();
-        
+
+    $("#score").html("<h3>Great Success!!</h3>");
+    $("#correct").html("Correct Answers: " + correctAnswer);
+    $("#incorrect").html("Incorrect Answers: " + wrongAnswer);
+    $("#unanswered").html("Unanswered: " + noAnswer);
+
 }
 
 // keeping score
@@ -256,26 +263,4 @@ function score() {
     }
 }
 
-
-
 });
-
-/*
-var qArr = [{
-    question: "Who holds the single season record for the highest batting average?",
-    answers: ["Ty Cobb", "Jose Canseco", "Hugh Duffy", "Fred Dunlap"],
-    correctAnswer: 2
-},{
-    question: "Who holds the record for the fastest pitch in Baseball History?",
-    answers: ["Pedro Martinez", "Nolan Ryan", "Aroldis Chapman", "Randy Johnson"],
-    correctAnswer: 3
-},{
-    question: "Who holds the record for throwing the most No Hitters in their career?",
-    answers: ["Greg Maddux", "Felix Hernandez", "Roger Clemens", "Nolan Ryan"],
-    correctAnswer: 4
-},{
-    question: "Who is the only teenager to homer on Opening Day?",
-    answers: ["Alex Rodriguez","Robin Yount","Gary Carter","Keith Hernandez"],
-    correctAnswer: 2
-}] 
-*/
