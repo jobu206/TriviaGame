@@ -122,54 +122,20 @@ $(".startButton").on("click", function () {
     $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question4'> " + " <label for='defaultInline1'>" + qArr[3].answers[2] + "</label>");
     $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='question4'> " + " <label for='defaultInline1'>" + qArr[3].answers[3] + "</label>");
 
-    // Now we're displaying the questions
-    // // question #1
-    // $("#questions").append("<p>1. " + qArr[0].question + "</p>");
-    // // console.log('hi');
-    
-    // // answers for Q1
-    // $('#q1answer').html('<p>hello world</p>');
-    // $("#q1answer").append("<input type='radio' id='defaultInline1' name='question1'>" + "<label for='defaultInline1'>" + qArr[0].answers[0] + "</label>");
-    // console.log('sup');
-    
-    // $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + qArr[0].answers[1] + "</label>")
-    // $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + qArr[0].answers[2] + "</label>")
-    // $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + qArr[0].answers[3] + "</label>")
-
-    // // question #2
-    // $("#question1").append("<p>" + qArr[1].question + "</p>");
-    
-    
-    // console.log('hey');
-    // // answers for Q2
-    // $(".answers").append("<input type='radio' class='custom-control-input' id='q2a1' name='question2'>" + "<label class='custom-control-label' for='q2a1'>" + qArr[1].answers[0] + "</label>")
-    // $(".answers").html("<input type='radio' class='custom-control-input' id='q2a2' name='question2'>" + "<label class='custom-control-label' for='q2a2'>" + qArr[1].answers[1] + "</label>")
-    // $(".answers").html("<input type='radio' class='custom-control-input' id='q2a3' name='question2'>" + "<label class='custom-control-label' for='q2a3'>" + qArr[1].answers[2] + "</label>")
-    // $(".answers").html("<input type='radio' class='custom-control-input' id='q2a4' name='question2'>" + "<label class='custom-control-label' for='q2a4'>" + qArr[1].answers[3] + "</label>")
-
-    // // question #3
-    // $("#questions").append("<li class='quizQs'>" + qArr[2].question + "</li>");
-    // // answers for Q3
-    // $(".answers").append("<input type='radio' class='custom-control-input' id='q3a1' name='question3'>" + "<label class='custom-control-label' for='q3a1'>" + qArr[2].answers[0] + "</label>")
-    // $(".answers").html("<input type='radio' class='custom-control-input' id='q3a2' name='question3'>" + "<label class='custom-control-label' for='q3a2'>" + qArr[2].answers[1] + "</label>")
-    // $(".answers").html("<input type='radio' class='custom-control-input' id='q3a3' name='question3'>" + "<label class='custom-control-label' for='q3a3'>" + qArr[2].answers[2] + "</label>")
-    // $(".answers").html("<input type='radio' class='custom-control-input' id='q3a4' name='question3'>" + "<label class='custom-control-label' for='q3a4'>" + qArr[2].answers[3] + "</label>")
-
-    // // question #4
-    // $("#questions").append("<li class='quizQs'>" + qArr[3].question + "</li>");
-    // // answers for Q4
-    // $(".answers").html("<input type='radio' class='custom-control-input' id='q4a1' name='question4'>" + "<label class='custom-control-label' for='q4a1'>" + qArr[3].answers[0] + "</label>") + 
-    // $(".answers").html("<input type='radio' class='custom-control-input' id='q4a2' name='question4'>" + "<label class='custom-control-label' for='q4a2'>" + qArr[3].answers[1] + "</label>") + 
-    // $(".answers").html("<input type='radio' class='custom-control-input' id='q4a3' name='question4'>" + "<label class='custom-control-label' for='q4a3'>" + qArr[3].answers[2] + "</label>") + 
-    // $(".answers").html("<input type='radio' class='custom-control-input' id='q4a4' name='question4'>" + "<label class='custom-control-label' for='q4a4'>" + qArr[3].answers[3] + "</label>")
-});
-
-
-    // answers to questions
-
     // submit answers
     $("#submit").html('<input class="btn btn-primary" type="submit" value="Submit">');
     console.log("submitted!");
+
+    // answers to questions
+    $("#submit").on("click", function () {
+        start();
+        finalResults();
+    })
+});
+
+
+    
+
     
 
 // set time interval function
@@ -179,7 +145,7 @@ function start() {
 }
 
 // function to decrement num container variable
-function decrement(param) {
+function decrement() {
     // decrement counter;
     counter--;
     
@@ -202,7 +168,7 @@ function stop() {
 }
 
 function finalResults() {
-    $('#time').hide();
+    stop();
     $('#q1').hide();
     $('#q1answers').hide();
     $('#q2').hide();
@@ -211,12 +177,17 @@ function finalResults() {
     $('#q3answers').hide();
     $('#q4').hide();
     $('#q4answers').hide();
+    $('#submit').hide();
 
     $("#score").html("<h3>Great Success!!</h3>");
     $("#correct").html("Correct Answers: " + correctAnswer);
+    console.log(correctAnswer);
+    
     $("#incorrect").html("Incorrect Answers: " + wrongAnswer);
+    console.log(wrongAnswer);
     $("#unanswered").html("Unanswered: " + noAnswer);
-
+    console.log(noAnswer);
+    
 }
 
 // keeping score
@@ -229,7 +200,7 @@ function score() {
     // Q1 check
     if (userAnswer1 === undefined) {
         noAnswer++;
-    } else if (userAnswer1 === qArr[0].answers) {
+    } else if (userAnswer1 == qArr[0].answers) {
         correctAnswer++;
     } else {
         wrongAnswer++;
@@ -238,7 +209,7 @@ function score() {
     // Q2 check
     if (userAnswer2 === undefined) {
         noAnswer++;
-    } else if (userAnswer2 === qArr[1].answers) {
+    } else if (userAnswer2 == qArr[1].answers) {
         correctAnswer++;
     } else {
         wrongAnswer++;
@@ -247,7 +218,7 @@ function score() {
     // Q3 check
     if (userAnswer3 === undefined) {
         noAnswer++;
-    } else if (userAnswer3 === qArr[2].answers) {
+    } else if (userAnswer3 == qArr[2].answers) {
         correctAnswer++;
     } else {
         wrongAnswer++;
@@ -256,7 +227,7 @@ function score() {
     // Q4 check
     if (userAnswer4 === undefined) {
         noAnswer++;
-    } else if (userAnswer4 === qArr[3].answers) {
+    } else if (userAnswer4 == qArr[3].answers) {
         correctAnswer++;
     } else {
         wrongAnswer++;
