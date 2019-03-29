@@ -57,13 +57,13 @@ var counter = 30;
 var intervalId;
 
 // correctAnswers
-var correctAnswers = 0;
+var correctAnswer = 0;
 
 // wrongAnswers
-var wrongAnswers = 0;
+var wrongAnswer = 0;
 
 // noAnswers
-var noAnswers = 0;
+var noAnswer = 0;
 
 // questionsArray
 var qArr = [{
@@ -96,43 +96,49 @@ $(".startButton").on("click", function () {
 
     // Now we're displaying the questions
     // question #1
-    $("#q1").html("<li class='quizQs'>" + qArr[0].question[1] + "</li>");
+    $("#questions").append("<li>" + qArr[0].question + "</li>");
+    console.log('hi');
+    
     // answers for Q1
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q1a1' name='question1'>" + "<label class='custom-control-label' for='q1a1'>" + qArr[0].answers[0] + "</label>")
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q1a2' name='question1'>" + "<label class='custom-control-label' for='q1a2'>" + qArr[0].answers[1] + "</label>")
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q1a3' name='question1'>" + "<label class='custom-control-label' for='q1a3'>" + qArr[0].answers[2] + "</label>")
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q1a4' name='question1'>" + "<label class='custom-control-label' for='q1a4'>" + qArr[0].answers[3] + "</label>")
+    $('#q1answer').append('<p>hello world</p>');
+    // $("#q1answer").html("<input type='radio' id='defaultInline1' name='question1'>" + "<label for='defaultInline1'>" + qArr[0].answers[0] + "</label>");
+    console.log('sup');
+    
+    // $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + qArr[0].answers[1] + "</label>")
+    // $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + qArr[0].answers[2] + "</label>")
+    // $(".custom-control .custom-radio .custom-control-inline .answers").html("<input type='radio' class='custom-control-input' id='defaultInline1' name='question1'>" + "<label class='custom-control-label' for='defaultInline1'>" + qArr[0].answers[3] + "</label>")
 
-    // question #2
-    $("#q2").html("<li class='quizQs'>" + qArr[1].question + "</li>");
-    // answers for Q2
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q2a1' name='question2'>" + "<label class='custom-control-label' for='q2a1'>" + qArr[1].answers[0] + "</label>")
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q2a2' name='question2'>" + "<label class='custom-control-label' for='q2a2'>" + qArr[1].answers[1] + "</label>")
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q2a3' name='question2'>" + "<label class='custom-control-label' for='q2a3'>" + qArr[1].answers[2] + "</label>")
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q2a4' name='question2'>" + "<label class='custom-control-label' for='q2a4'>" + qArr[1].answers[3] + "</label>")
+    // // question #2
+    $("#questions").append("<li>" + qArr[1].question + "</li>");
+    console.log('hey');
+    // // answers for Q2
+    // $(".answers").append("<input type='radio' class='custom-control-input' id='q2a1' name='question2'>" + "<label class='custom-control-label' for='q2a1'>" + qArr[1].answers[0] + "</label>")
+    // $(".answers").html("<input type='radio' class='custom-control-input' id='q2a2' name='question2'>" + "<label class='custom-control-label' for='q2a2'>" + qArr[1].answers[1] + "</label>")
+    // $(".answers").html("<input type='radio' class='custom-control-input' id='q2a3' name='question2'>" + "<label class='custom-control-label' for='q2a3'>" + qArr[1].answers[2] + "</label>")
+    // $(".answers").html("<input type='radio' class='custom-control-input' id='q2a4' name='question2'>" + "<label class='custom-control-label' for='q2a4'>" + qArr[1].answers[3] + "</label>")
 
-    // question #3
-    $("#q3").html("<li class='quizQs'>" + qArr[2].question + "</li>");
-    // answers for Q3
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q3a1' name='question3'>" + "<label class='custom-control-label' for='q3a1'>" + qArr[2].answers[0] + "</label>")
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q3a2' name='question3'>" + "<label class='custom-control-label' for='q3a2'>" + qArr[2].answers[1] + "</label>")
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q3a3' name='question3'>" + "<label class='custom-control-label' for='q3a3'>" + qArr[2].answers[2] + "</label>")
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q3a4' name='question3'>" + "<label class='custom-control-label' for='q3a4'>" + qArr[2].answers[3] + "</label>")
+    // // question #3
+    $("#questions").append("<li class='quizQs'>" + qArr[2].question + "</li>");
+    // // answers for Q3
+    // $(".answers").append("<input type='radio' class='custom-control-input' id='q3a1' name='question3'>" + "<label class='custom-control-label' for='q3a1'>" + qArr[2].answers[0] + "</label>")
+    // $(".answers").html("<input type='radio' class='custom-control-input' id='q3a2' name='question3'>" + "<label class='custom-control-label' for='q3a2'>" + qArr[2].answers[1] + "</label>")
+    // $(".answers").html("<input type='radio' class='custom-control-input' id='q3a3' name='question3'>" + "<label class='custom-control-label' for='q3a3'>" + qArr[2].answers[2] + "</label>")
+    // $(".answers").html("<input type='radio' class='custom-control-input' id='q3a4' name='question3'>" + "<label class='custom-control-label' for='q3a4'>" + qArr[2].answers[3] + "</label>")
 
-    // question #4
-    $("#q4").html("<li class='quizQs'>" + qArr[3].question + "</li>");
-    // answers for Q4
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q4a1' name='question4'>" + "<label class='custom-control-label' for='q4a1'>" + qArr[3].answers[0] + "</label>")
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q4a2' name='question4'>" + "<label class='custom-control-label' for='q4a2'>" + qArr[3].answers[1] + "</label>")
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q4a3' name='question4'>" + "<label class='custom-control-label' for='q4a3'>" + qArr[3].answers[2] + "</label>")
-    $(".answers").html("<input type='radio' class='custom-control-input' id='q4a4' name='question4'>" + "<label class='custom-control-label' for='q4a4'>" + qArr[3].answers[3] + "</label>")
-
-})
+    // // question #4
+    $("#questions").append("<li class='quizQs'>" + qArr[3].question + "</li>");
+    // // answers for Q4
+    // $(".answers").html("<input type='radio' class='custom-control-input' id='q4a1' name='question4'>" + "<label class='custom-control-label' for='q4a1'>" + qArr[3].answers[0] + "</label>") + 
+    // $(".answers").html("<input type='radio' class='custom-control-input' id='q4a2' name='question4'>" + "<label class='custom-control-label' for='q4a2'>" + qArr[3].answers[1] + "</label>") + 
+    // $(".answers").html("<input type='radio' class='custom-control-input' id='q4a3' name='question4'>" + "<label class='custom-control-label' for='q4a3'>" + qArr[3].answers[2] + "</label>") + 
+    // $(".answers").html("<input type='radio' class='custom-control-input' id='q4a4' name='question4'>" + "<label class='custom-control-label' for='q4a4'>" + qArr[3].answers[3] + "</label>")
+});
 
 
     // answers to questions
 
     // submit answers
+    $("#submit").html('<input class="btn btn-primary" type="submit" value="Submit">');
 
 // set time interval function
 function start() {
@@ -166,16 +172,74 @@ function stop() {
 function finalResults() {
     $('#time').hide();
     
+
+    
 }
 
 // keeping score
 function score() {
-    var userAnswer1 = $("#time").hide();
-    var userAnswer2 = $("").hide();
-    var userAnswer3 = $("").hide();
-    var userAnswer4 = $("").hide();
+    var userAnswer1 = $("input[name='q1a2']:checked").val();
+    var userAnswer2 = $("input[name='q2a3']:checked").val();
+    var userAnswer3 = $("input[name='q3a2']:checked").val();
+    var userAnswer4 = $("input[name='q4a2']:checked").val();
+
+    // Q1 check
+    if (userAnswer1 === undefined) {
+        noAnswer++;
+    } else if (userAnswer1 === qArr[0].answers) {
+        correctAnswer++;
+    } else {
+        wrongAnswer++;
+    }
+
+    // Q2 check
+    if (userAnswer2 === undefined) {
+        noAnswer++;
+    } else if (userAnswer2 === qArr[1].answers) {
+        correctAnswer++;
+    } else {
+        wrongAnswer++;
+    }
+
+    // Q3 check
+    if (userAnswer3 === undefined) {
+        noAnswer++;
+    } else if (userAnswer3 === qArr[2].answers) {
+        correctAnswer++;
+    } else {
+        wrongAnswer++;
+    }
+
+    // Q4 check
+    if (userAnswer4 === undefined) {
+        noAnswer++;
+    } else if (userAnswer4 === qArr[3].answers) {
+        correctAnswer++;
+    } else {
+        wrongAnswer++;
+    }
 }
 
 
 
 });
+
+/*
+var qArr = [{
+    question: "Who holds the single season record for the highest batting average?",
+    answers: ["Ty Cobb", "Jose Canseco", "Hugh Duffy", "Fred Dunlap"],
+    correctAnswer: 2
+},{
+    question: "Who holds the record for the fastest pitch in Baseball History?",
+    answers: ["Pedro Martinez", "Nolan Ryan", "Aroldis Chapman", "Randy Johnson"],
+    correctAnswer: 3
+},{
+    question: "Who holds the record for throwing the most No Hitters in their career?",
+    answers: ["Greg Maddux", "Felix Hernandez", "Roger Clemens", "Nolan Ryan"],
+    correctAnswer: 4
+},{
+    question: "Who is the only teenager to homer on Opening Day?",
+    answers: ["Alex Rodriguez","Robin Yount","Gary Carter","Keith Hernandez"],
+    correctAnswer: 2
+}] 
+*/
