@@ -96,31 +96,31 @@ $(".startButton").on("click", function () {
 
     // question #1
     $('#q1').append('<p>1&#46; ' + qArr[0].question + '</p>');
-    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q1a'> " + " <label for='defaultInline1'>" + qArr[0].answers[0] + "</label>");
-    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q1a'> " + " <label for='defaultInline1'>" + qArr[0].answers[1] + "</label>");
-    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q1a'> " + " <label for='defaultInline1'>" + qArr[0].answers[2] + "</label>");
-    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q1a'> " + " <label for='defaultInline1'>" + qArr[0].answers[3] + "</label>");
+    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[0].answers[0]} name='q1a'> " + " <label for='defaultInline1'>" + qArr[0].answers[0] + "</label>");
+    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[0].answers[1]} name='q1a'> " + " <label for='defaultInline1'>" + qArr[0].answers[1] + "</label>");
+    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[0].answers[2]} name='q1a'> " + " <label for='defaultInline1'>" + qArr[0].answers[2] + "</label>");
+    $('#q1answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[0].answers[3]} name='q1a'> " + " <label for='defaultInline1'>" + qArr[0].answers[3] + "</label>");
 
     // question #2
     $('#q2').append('<p>2&#46; ' + qArr[1].question + '</p>');
-    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q2a'> " + " <label for='defaultInline1'>" + qArr[1].answers[0] + "</label>");
-    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q2a'> " + " <label for='defaultInline1'>" + qArr[1].answers[1] + "</label>");
-    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q2a'> " + " <label for='defaultInline1'>" + qArr[1].answers[2] + "</label>");
-    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q2a'> " + " <label for='defaultInline1'>" + qArr[1].answers[3] + "</label>");
+    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[1].answers[0]} name='q2a'> " + " <label for='defaultInline1'>" + qArr[1].answers[0] + "</label>");
+    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[1].answers[1]} name='q2a'> " + " <label for='defaultInline1'>" + qArr[1].answers[1] + "</label>");
+    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[1].answers[2]} name='q2a'> " + " <label for='defaultInline1'>" + qArr[1].answers[2] + "</label>");
+    $('#q2answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[1].answers[3]} name='q2a'> " + " <label for='defaultInline1'>" + qArr[1].answers[3] + "</label>");
 
     // question #3
     $('#q3').append('<p>3&#46; ' + qArr[2].question + '</p>');
-    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q3a'> " + " <label for='defaultInline1'>" + qArr[2].answers[0] + "</label>");
-    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q3a'> " + " <label for='defaultInline1'>" + qArr[2].answers[1] + "</label>");
-    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q3a'> " + " <label for='defaultInline1'>" + qArr[2].answers[2] + "</label>");
-    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q3a'> " + " <label for='defaultInline1'>" + qArr[2].answers[3] + "</label>");
+    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[2].answers[0]} name='q3a'> " + " <label for='defaultInline1'>" + qArr[2].answers[0] + "</label>");
+    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[2].answers[1]} name='q3a'> " + " <label for='defaultInline1'>" + qArr[2].answers[1] + "</label>");
+    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[2].answers[2]} name='q3a'> " + " <label for='defaultInline1'>" + qArr[2].answers[2] + "</label>");
+    $('#q3answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[3].answers[3]} name='q3a'> " + " <label for='defaultInline1'>" + qArr[2].answers[3] + "</label>");
 
     // question #4
     $('#q4').append('<p>4&#46; ' + qArr[3].question + '</p>');
-    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q4a'> " + " <label for='defaultInline1'>" + qArr[3].answers[0] + "</label>");
-    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q4a'> " + " <label for='defaultInline1'>" + qArr[3].answers[1] + "</label>");
-    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q4a'> " + " <label for='defaultInline1'>" + qArr[3].answers[2] + "</label>");
-    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id='defaultInline1' name='q4a'> " + " <label for='defaultInline1'>" + qArr[3].answers[3] + "</label>");
+    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[3].answers[0]} name='q4a'> " + " <label for='defaultInline1'>" + qArr[3].answers[0] + "</label>");
+    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[3].answers[1]} name='q4a'> " + " <label for='defaultInline1'>" + qArr[3].answers[1] + "</label>");
+    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[3].answers[2]} name='q4a'> " + " <label for='defaultInline1'>" + qArr[3].answers[2] + "</label>");
+    $('#q4answers').append("&nbsp;&nbsp;&nbsp;<input type='radio' id=qArr[3].answers[3]} name='q4a'> " + " <label for='defaultInline1'>" + qArr[3].answers[3] + "</label>");
 
     // submit answers
     $("#submit").html('<input class="btn btn-primary" type="submit" value="Submit">');
@@ -187,14 +187,15 @@ function finalResults() {
 
 // keeping score
 function score() {
-    var userAnswer1 = $("input[name='q1a2']:checked").val();
-    var userAnswer2 = $("input[name='q2a3']:checked").val();
-    var userAnswer3 = $("input[name='q3a2']:checked").val();
-    var userAnswer4 = $("input[name='q4a2']:checked").val();
-
+    var userAnswer1 = $("input[name='q1a']:checked").val();
+    var userAnswer2 = $("input[name='q2a']:checked").val();
+    var userAnswer3 = $("input[name='q3a']:checked").val();
+    var userAnswer4 = $("input[name='q4a']:checked").val();
+console.log(userAnswer4);
     // Q1 check
     if (userAnswer1 === undefined) {
         noAnswer++;
+        
     } else if (userAnswer1 == qArr[0].correctAnswer) {
         correctAnswer++;
     } else {
