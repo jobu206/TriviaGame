@@ -205,7 +205,7 @@ function score() {
     // Q2 check
     if (userAnswer2 === undefined) {
         noAnswer++;
-    } else if (userAnswer2.slice(-1) == qArr[1].correctAnswer) {
+    } else if (userAnswer2.slice(-1) === qArr[1].correctAnswer) {
         correctAnswer++;
     } else {
         wrongAnswer++;
@@ -214,7 +214,7 @@ function score() {
     // Q3 check
     if (userAnswer3 === undefined) {
         noAnswer++;
-    } else if (parseInt(userAnswer3.slice(-1)) == qArr[2].correctAnswer) {
+    } else if (parseInt(userAnswer3.slice(-1)) === qArr[2].correctAnswer) {
         correctAnswer++;
     } else {
         wrongAnswer++;
@@ -223,7 +223,7 @@ function score() {
     // Q4 check
     if (userAnswer4 === undefined) {
         noAnswer++;
-    } else if (parseInt(userAnswer4.slice(-1)) == qArr[3].correctAnswer) {
+    } else if (parseInt(userAnswer4.slice(-1)) === qArr[3].correctAnswer) {
         correctAnswer++;
     } else {
         wrongAnswer++;
